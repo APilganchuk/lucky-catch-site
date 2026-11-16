@@ -1,0 +1,354 @@
+<!doctype html>
+<html lang="en" data-country="{lang}">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, viewport-fit=cover"
+		/>
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>Lucky Catch</title>
+		<link rel="icon" type="image/png" href="img/favicon.png" />
+		<script src="https://telegram.org/js/telegram-web-app.js"></script>
+
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+		<link
+			href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400..900&family=Unbounded:wght@700&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="./css/main.css" />
+	</head>
+	<body class="page">
+		<div class="preloader">
+			<img src="img/preloader.svg" alt="preloader" />
+		</div>
+		<div class="blur_wrap">
+			<div class="wrapper">
+				<div class="layout">
+					<div class="lang_switcher_outer">
+						<div class="lang_switcher">
+							<div class="curr_lang">
+								<span>en</span>
+							</div>
+							<i class="lang_arr"></i>
+						</div>
+						<ul class="lang_list">
+							<li class="lang_list_item" data-lang="en"><span>en</span></li>
+							<li class="lang_list_item" data-lang="de"><span>de</span></li>
+							<li class="lang_list_item" data-lang="pl"><span>pl</span></li>
+							<li class="lang_list_item" data-lang="ro"><span>ro</span></li>
+							<li class="lang_list_item" data-lang="hu"><span>hu</span></li>
+							<li class="lang_list_item" data-lang="gr"><span>gr</span></li>
+							<li class="lang_list_item" data-lang="bg"><span>bg</span></li>
+						</ul>
+					</div>
+					<div class="play">
+						<div class="bg-elements">
+							<div class="decor decor_1">
+								<img src="img/webp/coins.webp" alt="" />
+							</div>
+							<div class="decor decor_4">
+								<img src="img/webp/char-of.webp" alt="" />
+							</div>
+							<div class="decor decor_2">
+								<img src="img/webp/coins-mob.webp" alt="" />
+							</div>
+							<div class="decor decor_3">
+								<img src="img/webp/char-mob-of.webp" alt="" />
+							</div>
+						</div>
+						<a class="logo" href="#">
+							<svg class="logo__svg" viewBox="0 0 336 50" role="img" aria-label="Lucky Catch" xmlns="http://www.w3.org/2000/svg">
+								<defs>
+									<linearGradient id="lc-gold" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffea03"/><stop offset="1" stop-color="#ff9d00"/></linearGradient>
+									<linearGradient id="lc-yellow" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff27c"/><stop offset="1" stop-color="#f1c425"/></linearGradient>
+									<radialGradient id="lc-pink" cx="1" cy="1" r="1.1"><stop offset="0" stop-color="#ff2b4b"/><stop offset="1" stop-color="#940019"/></radialGradient>
+								</defs>
+								<circle cx="24" cy="27" r="21" fill="url(#lc-gold)" stroke="#680746" stroke-width="1.5"/>
+								<path d="M24 27L17.49 11.29A17 17 0 0 1 30.51 11.29Z" fill="url(#lc-pink)"/>
+								<path d="M24 27L30.51 11.29A17 17 0 0 1 39.71 20.49Z" fill="url(#lc-yellow)"/>
+								<path d="M24 27L39.71 20.49A17 17 0 0 1 39.71 33.51Z" fill="url(#lc-pink)"/>
+								<path d="M24 27L39.71 33.51A17 17 0 0 1 30.51 42.71Z" fill="url(#lc-yellow)"/>
+								<path d="M24 27L30.51 42.71A17 17 0 0 1 17.49 42.71Z" fill="url(#lc-pink)"/>
+								<path d="M24 27L17.49 42.71A17 17 0 0 1 8.29 33.51Z" fill="url(#lc-yellow)"/>
+								<path d="M24 27L8.29 33.51A17 17 0 0 1 8.29 20.49Z" fill="url(#lc-pink)"/>
+								<path d="M24 27L8.29 20.49A17 17 0 0 1 17.49 11.29Z" fill="url(#lc-yellow)"/>
+								<circle cx="16.73" cy="9.45" r="1.1" fill="#fff6c2"/>
+								<circle cx="31.27" cy="9.45" r="1.1" fill="#fff6c2"/>
+								<circle cx="41.55" cy="19.73" r="1.1" fill="#fff6c2"/>
+								<circle cx="41.55" cy="34.27" r="1.1" fill="#fff6c2"/>
+								<circle cx="31.27" cy="44.55" r="1.1" fill="#fff6c2"/>
+								<circle cx="16.73" cy="44.55" r="1.1" fill="#fff6c2"/>
+								<circle cx="6.45" cy="34.27" r="1.1" fill="#fff6c2"/>
+								<circle cx="6.45" cy="19.73" r="1.1" fill="#fff6c2"/>
+								<circle cx="24" cy="27" r="4" fill="url(#lc-gold)" stroke="#680746" stroke-width="1.2"/>
+								<path d="M18.5 2.5H29.5L24 13Z" fill="#fff" stroke="#680746" stroke-width="1.2" stroke-linejoin="round"/>
+								<text x="56" y="38" font-family="Unbounded, sans-serif" font-weight="700" font-size="30" stroke="#680746" stroke-width="3" stroke-linejoin="round" paint-order="stroke"><tspan fill="#fff">LUCKY</tspan><tspan fill="url(#lc-gold)" dx="10">CATCH</tspan></text>
+							</svg>
+						</a>
+						<div class="play__wrap">
+							<div class="play__box">
+								<div class="play__title stroke stroke--yellow">
+									<span class="en">Spin the wheel</span>
+									<span class="de">Drehen Sie das Rad,</span>
+									<span class="pl">Zakręć kołem,</span>
+									<span class="ro">Rotește roata</span>
+									<span class="hu">Pörgesd meg a kereket,</span>
+									<span class="gr">Περιστρέψτε τον τροχό</span>
+									<span class="bg">Завъртете колелото,</span>
+								</div>
+								<div class="play__subtitle stroke stroke--yellow">
+									<span class="en">to get your bonus</span>
+									<span class="de">um sich Ihren Bonus zu holen</span>
+									<span class="pl">aby odebrać bonus</span>
+									<span class="ro">pentru a obține bonusul</span>
+									<span class="hu">és szerezd meg a bónuszt</span>
+									<span class="gr">για πάρετε το μπόνους σας</span>
+									<span class="bg">за да получите бонуса си</span>
+								</div>
+							</div>
+							<div class="wheel" id="wheel">
+								<div class="wheel__light">
+									<img src="img/webp/wheel-lamps.webp" alt="arrow" />
+								</div>
+								<div class="wheel__arrow">
+									<img src="img/webp/wheel-arrow.webp" alt="arrow" />
+								</div>
+
+								<div id="wheel__spinner" class="wheel__spinner wheel__spinner_moving">
+									<div class="wheel__text wheel__text-1" style="transform: rotate(-198deg)">
+										<div class="wheel__bonus">
+											<div class="wheel__fs stroke stroke--wheel">
+												<span>15</span>
+												<span class="en">FS</span>
+												<span class="de">FS</span>
+												<span class="pl">DO</span>
+												<span class="ro">RG</span>
+												<span class="hu">IP</span>
+												<span class="gr">ΔΠ</span>
+												<span class="bg">БЗ</span>
+											</div>
+										</div>
+										<div class="wheel__bonus wheel__bonus-2">
+											<div class="wheel__fs stroke stroke--wheel-sec">
+												<span>15</span>
+												<span class="en">FS</span>
+												<span class="de">FS</span>
+												<span class="pl">DO</span>
+												<span class="ro">RG</span>
+												<span class="hu">IP</span>
+												<span class="gr">ΔΠ</span>
+												<span class="bg">БЗ</span>
+											</div>
+										</div>
+									</div>
+									<div class="wheel__text wheel__text-2" style="transform: rotate(-162deg)">
+										<div class="wheel__bonus">
+											<div class="wheel__fs stroke stroke--wheel-sec">
+												<span class="en">Empty</span>
+												<span class="de">Leer</span>
+												<span class="pl">Pusty</span>
+												<span class="ro">Gol</span>
+												<span class="hu">Üres</span>
+												<span class="gr">Κενό</span>
+												<span class="bg">Празно</span>
+											</div>
+										</div>
+										<div class="wheel__bonus wheel__bonus-2">
+											<div class="wheel__fs stroke stroke--wheel">
+												<span class="en">Empty</span>
+												<span class="de">Leer</span>
+												<span class="pl">Pusty</span>
+												<span class="ro">Gol</span>
+												<span class="hu">Üres</span>
+												<span class="gr">Κενό</span>
+												<span class="bg">Празно</span>
+											</div>
+										</div>
+									</div>
+									<div class="wheel__text wheel__text-3" style="transform: rotate(-126deg)">
+										<div class="wheel__bonus">
+											<div class="wheel__fs stroke stroke--wheel">
+												<span>100</span>
+												<span class="en">FS</span>
+												<span class="de">FS</span>
+												<span class="pl">DO</span>
+												<span class="ro">RG</span>
+												<span class="hu">IP</span>
+												<span class="gr">ΔΠ</span>
+												<span class="bg">БЗ</span>
+											</div>
+										</div>
+										<div class="wheel__bonus wheel__bonus-2">
+											<div class="wheel__fs stroke stroke--wheel-sec">
+												<span>100</span>
+												<span class="en">FS</span>
+												<span class="de">FS</span>
+												<span class="pl">DO</span>
+												<span class="ro">RG</span>
+												<span class="hu">IP</span>
+												<span class="gr">ΔΠ</span>
+												<span class="bg">БЗ</span>
+											</div>
+										</div>
+									</div>
+									<div class="wheel__text wheel__text-4" style="transform: rotate(-90deg)">
+										<div class="wheel__bonus">
+											<div class="wheel__fs stroke stroke--wheel-sec">
+												<span>70</span>
+												<span class="en">FS</span>
+												<span class="de">FS</span>
+												<span class="pl">DO</span>
+												<span class="ro">RG</span>
+												<span class="hu">IP</span>
+												<span class="gr">ΔΠ</span>
+												<span class="bg">БЗ</span>
+											</div>
+										</div>
+										<div class="wheel__bonus wheel__bonus-2">
+											<div class="wheel__fs stroke stroke--wheel">
+												<span>70</span>
+												<span class="en">FS</span>
+												<span class="de">FS</span>
+												<span class="pl">DO</span>
+												<span class="ro">RG</span>
+												<span class="hu">IP</span>
+												<span class="gr">ΔΠ</span>
+												<span class="bg">БЗ</span>
+											</div>
+										</div>
+									</div>
+									<div class="wheel__text wheel__text-5" style="transform: rotate(-54deg)">
+										<div class="wheel__bonus">
+											<div class="wheel__fs stroke stroke--wheel">
+												<span>50</span>
+												<span class="en">FS</span>
+												<span class="de">FS</span>
+												<span class="pl">DO</span>
+												<span class="ro">RG</span>
+												<span class="hu">IP</span>
+												<span class="gr">ΔΠ</span>
+												<span class="bg">БЗ</span>
+											</div>
+										</div>
+										<div class="wheel__bonus wheel__bonus-2">
+											<div class="wheel__fs stroke stroke--wheel-sec">
+												<span>50</span>
+												<span class="en">FS</span>
+												<span class="de">FS</span>
+												<span class="pl">DO</span>
+												<span class="ro">RG</span>
+												<span class="hu">IP</span>
+												<span class="gr">ΔΠ</span>
+												<span class="bg">БЗ</span>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="wheel__btn-box">
+									<button class="wheel__btn stroke stroke--btn" id="wheel__btn">
+										<span class="en">Spin</span>
+										<span class="de">Drehen</span>
+										<span class="pl">Zakręć</span>
+										<span class="ro">Rotește</span>
+										<span class="hu">Pörgetés</span>
+										<span class="gr">Περιστροφή</span>
+										<span class="bg">Завъртане</span>
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>
+					<footer class="footer">
+						<p>
+							©
+							<span id="year">2024</span>
+							Lucky Catch. All rights reserved.
+						</p>
+					</footer>
+				</div>
+			</div>
+			<div class="overlay" id="overlay">
+				<div class="popup popup_first" id="popup-first">
+					<div class="popup__decor">
+						<img src="img/webp/popup-coins.webp" alt="" />
+					</div>
+					<div class="popup__box">
+						<div class="popup__wrap">
+							<div class="popup__title stroke stroke--popup">
+								<span class="en">Congratulations!</span>
+								<span class="de">Glückwunsch!</span>
+								<span class="pl">Gratulacje!</span>
+								<span class="ro">Felicitări!</span>
+								<span class="hu">Gratulálunk!</span>
+								<span class="gr">Συγχαρητήρια!</span>
+								<span class="bg">Поздравления!</span>
+							</div>
+							<div class="popup__subtitle stroke stroke--popup">
+								<span class="en">You won</span>
+								<span class="de">Sie haben gewonnen</span>
+								<span class="pl">Wygrywasz</span>
+								<span class="ro">Ai câștigat</span>
+								<span class="hu">nyertél</span>
+								<span class="gr">Κερδίσατε</span>
+								<span class="bg">Спечелихте</span>
+							</div>
+							<div class="popup__prize stroke stroke--yellow">
+								<span class="en">100 FS</span>
+								<span class="de">100 FS</span>
+								<span class="pl">100 DO</span>
+								<span class="ro">100 RG</span>
+								<span class="hu">100 IP</span>
+								<span class="gr">100 ΔΠ</span>
+								<span class="bg">100 БЗ</span>
+							</div>
+
+							<button type="button" class="popup__promo" id="promo-code" data-code="FISH">
+								<div class="popup__promo-label">
+									<span class="en">Use code:</span>
+									<span class="de">Aktionscode:</span>
+									<span class="pl">Użyj kodu:</span>
+									<span class="ro">Folosește codul:</span>
+									<span class="hu">Promóciós kód:</span>
+									<span class="gr">Κωδικός προσφοράς:</span>
+									<span class="bg">Използвай код:</span>
+								</div>
+								<span class="popup__promo-code stroke stroke--yellow">
+									<span>FISH</span>
+								</span>
+								<span class="popup__copied">
+									<span class="en">copied</span>
+									<span class="de">kopiert</span>
+									<span class="pl">skopiowano</span>
+									<span class="ro">copiat</span>
+									<span class="hu">kimásolva</span>
+									<span class="gr">αντιγράφηκε</span>
+									<span class="bg">копиран</span>
+								</span>
+							</button>
+
+							<div class="popup__img">
+								<img src="img/webp/popup-fish.webp" alt="" />
+							</div>
+
+							<a id="popup-btn" href="#" class="popup__btn">
+								<span class="en">Get bonus</span>
+								<span class="de">Bonus erhalten</span>
+								<span class="pl">Odbierz bonus</span>
+								<span class="ro">Obține bonusul</span>
+								<span class="hu">Bónusz megszerzése</span>
+								<span class="gr">Πάρτε μπόνους</span>
+								<span class="bg">Получете бонус</span>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="./js/index.js" defer></script>
+		<script src="landing.js"></script>
+	</body>
+</html>
